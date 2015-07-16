@@ -18,3 +18,28 @@ a {
 #code{
   margin-left: 50px;
 }
+
+canvas{
+  margin-left: 15em;
+}
+
+h2{
+  text-align: center;
+}
+
+#options{
+  text-align: center;
+
+}
+p{
+  text-align: center;
+}
+
+select{
+margin-right: 15px;
+
+}
+
+button{
+margin-left: 15px;
+}
