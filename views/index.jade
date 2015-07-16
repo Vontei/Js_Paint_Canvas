@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h2 Object Oriented Painting
+  div(id='border')
+    canvas(id='canvas' height='500' width='900')
+    div(id='options')
+      select(id='select' value=option)
+        option Square
+        option Circle
+      input(type='color' id='color' name='color')
+      button(id='clearBoth') Delete ALL
+      button(id='random') Random Stuff
+      button(id='changeColor') Change Colors
+  div('code')
+    p Number of Squares:
+    p(id='countSquares')
+    p Number of Circles:
+    p(id='countCircles')
+  script(src='javascripts/paint.js')
