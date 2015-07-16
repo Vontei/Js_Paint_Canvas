@@ -100,6 +100,11 @@ random.addEventListener('click', function(){
     news.color = "#" + Math.floor(Math.random()*16777215).toString(16)
     console.log(news)
     news.draw("#" + Math.floor(Math.random()*16777215).toString(16))
+
+    function render(){
+    requestAnimationFrame(render);
+  }
+  render()
   }
   circ.innerHTML = circles.length
   sqr.innerHTML = squares.length
