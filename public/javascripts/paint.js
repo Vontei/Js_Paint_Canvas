@@ -25,9 +25,8 @@ function Square(height,width,color){
   this.width = width
   this.x -= canvas.offsetLeft + (this.height/2)
   this.y -= canvas.offsetTop + (this.width/2)
-  // ctx.fillStyle = color
-  // ctx.fillRect(this.x,this.y,this.height,this.width)
 }
+
 Square.prototype = new Shape();
 Square.prototype.draw = function(color){
   ctx.fillStyle = color
@@ -38,10 +37,6 @@ function Circle(color, width){
   this.x = event.x -60
   this.y = event.y -60
   this.width = width
-  // ctx.beginPath()
-  // ctx.arc(this.x,this.y,this.width,0,2*Math.PI, false);
-  // ctx.fillStyle = color
-  // ctx.fill()
 }
 Circle.prototype = new Shape();
 Circle.prototype.draw = function(color){
@@ -109,7 +104,6 @@ random.addEventListener('click', function(){
   circ.innerHTML = circles.length
   sqr.innerHTML = squares.length
 })
-
 
 clear.addEventListener('click', function(){
   var clear = new Square(2000,2000,'white')
